@@ -6,7 +6,8 @@ import { useEffect, useRef } from 'react';
 const sectionStyle = css({
   width: '100%',
   margin: '0 auto',
-  padding: '96px 16px 96px 16px',
+  // padding: '96px 16px 96px 16px',
+  padding: '40px 16px 40px 16px',
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
@@ -14,7 +15,8 @@ const sectionStyle = css({
   background: ' linear-gradient(102.07deg, #FFFFFF -0.01%, #FFFCEE 99.99%);',
   zIndex: 1,
   md: {
-    padding: '120px 16px 120px 16px',
+    // padding: '120px 16px 120px 16px',
+    padding: '40px 16px 40px 16px',
   },
 });
 

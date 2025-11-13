@@ -191,7 +191,7 @@ const snsLinks = [
   // },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/renai_kyoso?igsh=ZWYzZmd0b2Y0YWly&utm_source=qr',
+    url: 'https://www.instagram.com/drlove__official/?igsh=d3VtbmtiZzUyZGNu&utm_source=qr#',
     imageSrc: '/images/instagram-icon.png',
   },
   // {

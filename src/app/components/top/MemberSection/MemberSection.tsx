@@ -17,12 +17,12 @@ const sectionStyle = css({
   borderTopLeftRadius: '40px',
   borderTopRightRadius: '40px',
   boxShadow: '0 -16px 32px -8px rgba(0,0,0,0.10)',
-  padding: '64px 16px',
+  padding: '32px 16px 64px', // reduced top padding
   sm: {
-    padding: '64px 24px',
+    padding: '32px 24px 64px', // reduced top padding
   },
   md: {
-    padding: '80px 40px',
+    padding: '48px 40px 80px', // reduced top padding
     gap: '64px',
   },
 });

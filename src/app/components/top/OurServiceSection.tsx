@@ -13,12 +13,12 @@ const sectionStyle = css({
   position: 'relative',
   background: 'background',
   overflow: 'hidden',
-  padding: '32px 32px 80px', // extra bottom padding
+  padding: '32px 32px 32px', // removed bottom padding
   zIndex: 2,
   borderRadius: '0 0 40px 40px',
   // Downward-only shadow: y‑offset 24px, blur 32px, negative spread to avoid top shadow
   boxShadow: '0 24px 32px -16px rgba(0,0,0,0.15)',
-  md: { padding: '64px 64px 96px' }, // extra bottom padding for md+
+  md: { padding: '64px 64px 64px' }, // removed bottom padding for md+
 });
 
 const contentWrapper = css({
@@ -196,23 +196,23 @@ Dr.Love AIは、心の深い部分からあなたに寄り添いながら、よ�
 誰にも言えなかった気持ちを、もうひとりで抱えなくていい。
 Dr.Love AIが、いつでもあなたのそばにいます。`,
   },
-//   {
-//     id: 'main-2',
-//     video: '/videos/serviceImage3.mp4',
-//     title: 'あなた専属の相談相手',
-//     text: `Dr.Love AIは、<wbr>あなたの骨格タイプ・顔立ち・パーソナルカラーなどをもとに、<wbr>"今のあなた"にぴったりな<wbr>美容サロンを複数提案し、予約までまるごとサポートします。
+  //   {
+  //     id: 'main-2',
+  //     video: '/videos/serviceImage3.mp4',
+  //     title: 'あなた専属の相談相手',
+  //     text: `Dr.Love AIは、<wbr>あなたの骨格タイプ・顔立ち・パーソナルカラーなどをもとに、<wbr>"今のあなた"にぴったりな<wbr>美容サロンを複数提案し、予約までまるごとサポートします。
 
-// さらに、肌質や予算、好みに合わせて、おすすめのコスメを複数ご提案。
-// そのままECサイトで購入できる<wbr>リンクも自動でお届けするので、迷わず行動に移せます。
+  // さらに、肌質や予算、好みに合わせて、おすすめのコスメを複数ご提案。
+  // そのままECサイトで購入できる<wbr>リンクも自動でお届けするので、迷わず行動に移せます。
 
-// 毎月、自分の変化を楽しめる<wbr>「美容サブスクボックス」<wbr>では、外見を整えるだけでなく、心の充実にもつながる"自分磨き"体験をお届け。
-// ただ消費するのではなく、「気づき」と「前向きな変化」を実感しながら続けられる設計です。
+  // 毎月、自分の変化を楽しめる<wbr>「美容サブスクボックス」<wbr>では、外見を整えるだけでなく、心の充実にもつながる"自分磨き"体験をお届け。
+  // ただ消費するのではなく、「気づき」と「前向きな変化」を実感しながら続けられる設計です。
 
-// そして、本格的に外見を整えたい方には、半年〜1年かけて最短距離で自己変革を叶える<wbr>「外見プロデュースパック」<wbr>もご用意。
+  // そして、本格的に外見を整えたい方には、半年〜1年かけて最短距離で自己変革を叶える<wbr>「外見プロデュースパック」<wbr>もご用意。
 
-// 骨格診断やパーソナルカラー分析をベースに、ヘア・スキンケア・ファッション・サロン・コスメまで一貫してプロデュース。
-// "見た目"から始まる新しい自分へ、しっかりと伴走していきます。`,
-//   },
+  // 骨格診断やパーソナルカラー分析をベースに、ヘア・スキンケア・ファッション・サロン・コスメまで一貫してプロデュース。
+  // "見た目"から始まる新しい自分へ、しっかりと伴走していきます。`,
+  //   },
 ];
 
 const serviceContents = rawServiceContents.map(({ text, ...rest }) => ({

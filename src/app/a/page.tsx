@@ -1,4 +1,3 @@
-import CompanyLogoSection from '@/app/components/CompanyLogoSection';
 import CompanySection from '@/app/components/top/CompanySection';
 import ContentLinkSection from '@/app/components/top/ContentLinkSection';
 import GallerySection from '@/app/components/top/GallerySection';
@@ -19,7 +18,7 @@ export default function APage() {
       <MessageSection />
       <ContentLinkSection />
       <OurServiceSection />
-      <CompanyLogoSection />
+      {/* <CompanyLogoSection /> */}
       <MemberSection />
       <NewsSection />
       <RecruitSection />
