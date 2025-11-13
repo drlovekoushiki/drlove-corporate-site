@@ -184,52 +184,52 @@ export default function CompanyLogoSection() {
     };
   }, [logoRows]);
 
-  // return (
-  //   <section className={sectionStyle}>
-  //     <Image src="/top/company/company-bg-moyamoya.png" alt="背景" fill className={bgStyle} />
+  return (
+    <section className={sectionStyle}>
+      {/* <Image src="/top/company/company-bg-moyamoya.png" alt="背景" fill className={bgStyle} />
 
-  //     <h2 className={titleStyle}>想いを共にする企業様と一緒に歩んでおります</h2>
-  //     {/* 横スクロール3行（無限ループ） */}
-  //     {logoRows.map((row, idx) => (
-  //       <div
-  //         className={rowScrollStyle}
-  //         key={row.map((logo) => logo.alt).join('-')}
-  //         ref={(el) => {
-  //           rowRefs.current[idx] = el;
-  //         }}
-  //       >
-  //         <div
-  //           className="logo-container"
-  //           style={{ display: 'flex', gap: '24px', width: 'max-content' }}
-  //         >
-  //           {/* 6回繰り返してラグを大幅に減らす */}
-  //           {[...row, ...row, ...row, ...row, ...row, ...row].map((logo, i) => (
-  //             <div key={`${logo.alt}-${i}`} className={`${logoCardStyle} logo-card`}>
-  //               <Image
-  //                 src={logo.src}
-  //                 alt={logo.alt}
-  //                 width={120}
-  //                 height={32}
-  //                 className={logoImageStyle}
-  //                 priority={false}
-  //                 unoptimized={false}
-  //               />
-  //             </div>
-  //           ))}
-  //         </div>
-  //       </div>
-  //     ))}
-  //     {/* ロゴ下の説明文 */}
-  //     <div className={descriptionStyle}>
-  //       共に歩んでくださるパートナーを随時募集しております
-  //       <br />
-  //       まずはお気軽にご相談ください
-  //     </div>
-  //     <div className={buttonWrapperStyle}>
-  //       <Link href="/inquiry" style={{ textDecoration: 'none' }}>
-  //         <PrimaryButton size="large">お問い合わせ</PrimaryButton>
-  //       </Link>
-  //     </div>
-  //   </section>
-  // );
+      <h2 className={titleStyle}>想いを共にする企業様と一緒に歩んでおります</h2>
+      横スクロール3行（無限ループ）
+      {logoRows.map((row, idx) => (
+        <div
+          className={rowScrollStyle}
+          key={row.map((logo) => logo.alt).join('-')}
+          ref={(el: HTMLDivElement | null) => {
+            rowRefs.current[idx] = el;
+          }}
+        >
+          <div
+            className="logo-container"
+            style={{ display: 'flex', gap: '24px', width: 'max-content' }}
+          >
+            6回繰り返してラグを大幅に減らす
+            {[...row, ...row, ...row, ...row, ...row, ...row].map((logo, i) => (
+              <div key={`${logo.alt}-${i}`} className={`${logoCardStyle} logo-card`}>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={120}
+                  height={32}
+                  className={logoImageStyle}
+                  priority={false}
+                  unoptimized={false}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+      ロゴ下の説明文
+      <div className={descriptionStyle}>
+        共に歩んでくださるパートナーを随時募集しております
+        <br />
+        まずはお気軽にご相談ください
+      </div>
+      <div className={buttonWrapperStyle}>
+        <Link href="/inquiry" style={{ textDecoration: 'none' }}>
+          <PrimaryButton size="large">お問い合わせ</PrimaryButton>
+        </Link>
+      </div> */}
+    </section>
+  );
 }
