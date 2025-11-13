@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 // HTMLタグやスクリプトを検出する正規表現
 const noHtmlRegex = /^[^<>]*$/;
-const noScriptRegex = /^(?!.*(<script|javascript:|on\w+\s*=)).*$/is;
+const noScriptRegex = /^(?![\s\S]*(<script|javascript:|on\w+\s*=))[\s\S]*$/i;
 
 export const contactSchema = z.object({
   name: z
