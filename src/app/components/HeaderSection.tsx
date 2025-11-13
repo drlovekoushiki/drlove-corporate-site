@@ -184,26 +184,26 @@ type IconButtonProps = {
 };
 
 const snsLinks = [
-  {
-    name: 'X',
-    url: 'https://x.com/renai_kyoso?s=21&t=L76j-ftMbaNCn-37cRu1lA',
-    imageSrc: '/images/x-icon.png',
-  },
+  // {
+  //   name: 'X',
+  //   url: 'https://x.com/renai_kyoso?s=21&t=L76j-ftMbaNCn-37cRu1lA',
+  //   imageSrc: '/images/x-icon.png',
+  // },
   {
     name: 'Instagram',
     url: 'https://www.instagram.com/renai_kyoso?igsh=ZWYzZmd0b2Y0YWly&utm_source=qr',
     imageSrc: '/images/instagram-icon.png',
   },
-  {
-    name: 'Threads',
-    url: 'https://www.threads.com/@renai_kyoso?igshid=NTc4MTIwNjQ2YQ==',
-    imageSrc: '/images/threads-icon.png',
-  },
-  {
-    name: 'Tiktok',
-    url: 'https://www.tiktok.com/@renai.kyoso?_t=ZS-8wQ9IW3sS4W&_r=1',
-    imageSrc: '/images/tiktok-icon.png',
-  },
+  // {
+  //   name: 'Threads',
+  //   url: 'https://www.threads.com/@renai_kyoso?igshid=NTc4MTIwNjQ2YQ==',
+  //   imageSrc: '/images/threads-icon.png',
+  // },
+  // {
+  //   name: 'Tiktok',
+  //   url: 'https://www.tiktok.com/@renai.kyoso?_t=ZS-8wQ9IW3sS4W&_r=1',
+  //   imageSrc: '/images/tiktok-icon.png',
+  // },
   { name: 'LINE', url: 'https://page.line.me/206fcago', imageSrc: '/images/line-icon.png' },
 ] as const;
 

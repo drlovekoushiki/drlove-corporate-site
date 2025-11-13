@@ -54,7 +54,7 @@ const tdStyle = css({
 
 const companyInfo = [
   { label: '会社名', value: 'Dr. Love株式会社' },
-  { label: '設立', value: '2025年8月2日' },
+  { label: '設立', value: '2025年10月20日' },
   { label: '代表', value: '水池 愛香' },
 ];
 
