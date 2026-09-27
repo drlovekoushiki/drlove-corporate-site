@@ -13,7 +13,12 @@ export default function SplashWrapper({ children }: SplashWrapperProps) {
 
   // 初回マウント時にアニメーションをスキップするかどうかを判定
   useEffect(() => {
-    const hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
+    // Cookie・サイトデータがブロックされた環境では sessionStorage へのアクセス自体が例外になる。
+    // 例外でページ全体がエラー画面に置き換わらないよう握りつぶす（その場合は毎回スプラッシュを表示）
+    let hasSeenSplash: string | null = null;
+    try {
+      hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
+    } catch {}
     const hasAnchorHash = window.location.hash && window.location.hash.length > 1;
 
     if (hasSeenSplash || hasAnchorHash) {
@@ -34,7 +39,9 @@ export default function SplashWrapper({ children }: SplashWrapperProps) {
     setShowSplash(false);
     setSplashCompleted(true);
     // アニメーションを見たことをセッションに記録する（アニメーションは初回のみトリガーさせるようにする）
-    sessionStorage.setItem('hasSeenSplash', 'true');
+    try {
+      sessionStorage.setItem('hasSeenSplash', 'true');
+    } catch {}
   };
 
   return (
